@@ -22,6 +22,6 @@ def leapYearCheck(x):
 print("Please enter a number to see if it is a leap year:")
 x = input()
 if x.isdigit() == False:
-    print(str(x) + " is not a number")
+    print(str(x) + " is not a number, or includes characters")
     exit()
 else: leapYearCheck(int(x))
