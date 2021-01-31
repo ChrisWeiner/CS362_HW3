@@ -2,6 +2,7 @@
 #CS 362
 #Assignment 3
 #Leap Year - No Input Checking/Validation
+#need to run in command prompt with python3 CW_LeapYear_NoCheck.py
 
 def leapYearCheck(x):
     if(x % 4) == 0:
