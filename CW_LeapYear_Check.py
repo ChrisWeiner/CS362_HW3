@@ -21,10 +21,11 @@ def leapYearCheck(x):
 
 print("Please enter a number to see if it is a leap year:")
 x = input()
-if(float(x) < 0):
-    print(str(x) + " is less than zero, cannot check if it's a leap year")
-    exit()
-elif x.isdigit() == False:
-    print(str(x) + " is not a number, or includes characters")
-    exit()
-else: leapYearCheck(int(x))
+try:
+    x = int(x)
+    if(x < 0):
+        print(str(x) + " is less than zero, cannot check if it's a leap year")
+    else:
+        leapYearCheck(int(x))
+except ValueError:
+        print(str(x) + " is not a valid number, or includes characters")
